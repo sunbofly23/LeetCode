@@ -39,10 +39,32 @@ public class Palindrome {
         return  true;
     }
 
+    //项目当时解析json
+//public static void  sort(){
+//    String [] srr = new String[10];
+//    String str = "[1000,2000,3000,5000,8000,10000,15000,20000,25000,30000]";
+//    if (!str.isEmpty()) {
+//        str = str.substring(1,str.length()-1);
+//        srr = str.split(","); // 用,分割
+//        if(!srr[0].isEmpty())
+//        System.out.printf(Integer.parseInt(srr[0])+"");
+//        for (String i:srr
+//             ) {
+//            System.out.printf(i+"\n");
+//        }
+//    }
+//}
     public static void main(String[] args) {
         String str = "A man, a plan, a canal: Panama";
         Palindrome palindrome = new Palindrome();
         boolean flag = palindrome.isPalindrome(str);
         System.out.printf(flag+"");
+//        sort();
     }
+
+
+
+
+
+
 }
