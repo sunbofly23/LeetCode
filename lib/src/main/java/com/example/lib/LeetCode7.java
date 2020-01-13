@@ -4,6 +4,8 @@ package com.example.lib;
  * Created by sunbo on 2019/5/3.
  */
 
+import java.util.Random;
+
 /**
  * Input: 123
  Output: 321
@@ -33,10 +35,4 @@ public class LeetCode7 {
     public static void main(String[] args) {
         System.out.printf(""+reverse(-1123));
     }
-
-
-
-
-
-
 }

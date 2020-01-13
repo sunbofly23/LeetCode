@@ -22,21 +22,21 @@ public class LeetCode26 {
     /*用快慢指针*/
 
     public static int removeDuplicates(int[] nums) {
-       if(nums==null||nums.length==0)
-           return 0;
-       int cur = 0;
+        if (nums == null || nums.length == 0)
+            return 0;
 
-       for(int pre = 0;pre<nums.length;pre++){
-           if(nums[cur]!=nums[pre]){
-               cur++;
-               nums[cur] = nums[pre];
-           }
-       }
-       return ++cur;
+        int cur = 0;
+
+        for (int pre = 0; pre < nums.length; pre++) {
+            if (nums[cur] != nums[pre]) {
+                cur++;
+                nums[cur] = nums[pre];
+            }
+        }
+
+        return ++cur;
 
     }
-
-
 
 
     public static void main(String[] args) {
@@ -44,11 +44,11 @@ public class LeetCode26 {
 
         int len = removeDuplicates(arr);
 
-        for(int i= 0;i<len;i++){
-            System.out.printf("arr["+i+"]="+arr[i]+"\n");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("arr[" + i + "]=" + arr[i] + "\n");
         }
 
-        System.out.printf("arr.length ="+len);
+        System.out.printf("arr.length =" + len);
     }
 
 }
