@@ -13,11 +13,12 @@ package com.example.lib;
 * */
 
 
+//leetcode 125题
 public class Palindrome {
 
     public boolean isPalindrome(String s){
         //如果是空字符串认为不是回文串
-        if(s==null||s.length()==0)
+        if(s==null)
             return false;
         //定义一个头指针
         int i = 0;
@@ -43,7 +44,7 @@ public class Palindrome {
     public static void main(String[] args) {
         String str = "A man, a plan, a canal: Panama";
         Palindrome palindrome = new Palindrome();
-        boolean flag = palindrome.isPalindrome(str);
+        boolean flag = palindrome.isPalindrome("");
         System.out.printf(flag+"");
     }
 

@@ -24,8 +24,8 @@ public class LeetCode28 {
 
 
     public static void main(String[] args) {
-        String str = "aaaaa";
-        String sub = "bba";
+        String str = "hello";
+        String sub = "ll";
         int i = strStr(str,sub);
         System.out.printf(i+"");
     }
