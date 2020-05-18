@@ -1,11 +1,12 @@
 package com.example.lib;
 
+
+//用b的a中c的
 public class test {
 
     public static void main(String[] args) {
         test();
     }
-
 
     private static  void test(){
         String a = "babbcbb";
